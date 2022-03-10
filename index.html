@@ -26,12 +26,11 @@
             <div class="card col-sm-10 col-xl m-1">
                 <div class="card-header"><h3>🏦 Bank</h3></div>
                 <div class="card-body">
-                    <label>Balance</label>
-                    <span id="bankBalance"></span>
+                    <label>Balance: </label>
+                    <span id="balance"></span>
                 </div>
                 <div class="card-body">
-                    <label class="text-danger">Loan</label>
-                    <span id="loanBalance"></span>
+                    <label id="debt" class="text-danger"></label>
                 </div>
                 <div class="card-footer">
                     <button id="barrow" type="button" class="btn btn-danger col-xl m-1" onClick="barrowMoney()">Get a loan</input>
@@ -41,12 +40,12 @@
             <div class="card col-sm-10 col-xl m-1">
                 <div class="card-header"><h3>💰 Income</h3></div>
                 <div class="card-body">
-                    <label>Pay</label>
-                    <span id="balance"></span>
+                    <label>Amount Earned:  </label>
+                    <span id="earned"></span>
                 </div>
                 <div class="card-footer row">
-                    <button id="bank" type="button" class="btn btn-warning col m-1" onClick="moveSalaryToBank()">Bank</button>
-                    <button id="salary" type="button" class="btn btn-success col m-1" onClick="updateSalary()">Work</button>
+                    <button id="transferToBank" type="button" class="btn btn-warning col m-1" onClick="transferEarningsToBank()">Transfer to Bank</button>
+                    <button id="earnings" type="button" class="btn btn-success col m-1" onClick="WorkandEarn()">Work and Earn</button>
                 </div>
             </div>
 
