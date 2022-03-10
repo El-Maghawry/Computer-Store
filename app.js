@@ -26,7 +26,6 @@ function transferEarningsToBank() {
     
     if (!debt === 0){
         
-
     } else {
         balance += income;
         balanceLabel.innerText = `€ ${balance}`;
