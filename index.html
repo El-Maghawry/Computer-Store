@@ -24,7 +24,7 @@
         <div class="row  mt-1">
 
             <div class="card col-sm-10 col-xl m-1">
-                <div class="card-header"><h3>🏦 Bank</h3></div>
+                <div class="card-header row"><h3>🏦 Bank</h3></div>
                 <div class="card-body">
                     <label>Balance: </label>
                     <span id="balance"></span>
@@ -32,13 +32,14 @@
                 <div class="card-body">
                     <label id="debt" class="text-danger"></label>
                 </div>
-                <div class="card-footer">
+                <div class="card-footer row">
                     <button id="barrow" type="button" class="btn btn-danger col-xl m-1" onClick="barrowMoney()">Get a loan</input>
+                    <button id="payback" type="button" class="btn btn-primary col-xl m-1" onClick="paybackMoney()">Pay Loan</input>
                 </div>
             </div>
             
             <div class="card col-sm-10 col-xl m-1">
-                <div class="card-header"><h3>💰 Income</h3></div>
+                <div class="card-header row"><h3>💰 Income</h3></div>
                 <div class="card-body">
                     <label>Amount Earned:  </label>
                     <span id="earned"></span>
@@ -52,7 +53,7 @@
             
             <!-- Store -->
             <div class="card col-sm-10 col-xl m-1">
-                    <div class="card-header"><h3>💻 Computer Store</h3></div>
+                    <div class="card-header row"><h3>💻 Computer Store</h3></div>
                     <div class="col-sm-5">
                         <img id="image"
                         height="200" 
