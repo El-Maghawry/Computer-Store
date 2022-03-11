@@ -5,9 +5,9 @@ const balanceLabel = document.getElementById("balance")
 const debtLabel = document.getElementById("debt")
 
 const products = [];
-let income = 0.0;
+let income = 0;
 let balance = income; // is this right?
-let debt = 0;
+let debt = 0.0;
 
 //default
 incomeLabel.innerText = "€ 0";
@@ -22,11 +22,28 @@ function WorkandEarn() {
 }
 
 function transferEarningsToBank() {
+    dept = parseFloat(debt)
+    console.log(income*0.1, parseFloat(debt), typeof parseFloat(debt))
     
-    
-    if (!debt === 0){
-        
-        
+    if (parseFloat(debt) !== 0.0){
+        console.log("debt is not 0.0")
+        if(income*0.1 <= parseFloat(debt)){
+            debt -= income*0.1
+            balance += income*0.9
+            balanceLabel.innerText = `€ ${balance}`;
+            debtLabel.innerText = `Debt: € ${debt}`;
+            console.log(`You still have a debt of € ${debt}`)
+        }else {
+            income -= parseFloat(debt);
+            debt = 0.0;
+            balance += income;
+            balanceLabel.innerText = `€ ${balance}`;
+            debtLabel.innerText = `Debt: € ${debt}`;
+            console.log("debt has been payed off")
+
+        }
+
+
     } else {
         balance += income;
         balanceLabel.innerText = `€ ${balance}`;
@@ -35,14 +52,14 @@ function transferEarningsToBank() {
     income = 0.0;
     incomeLabel.innerText = `€ ${income}`;
 
-    if (debt === 0){
+    if (debt === 0.0){
         debtLabel.innerText = "";
     }
 }
 
 function barrowMoney() {
 
-    if (parseInt(debt) === 0){
+    if (debt === 0.0){
 
         debt = prompt(`
     How much money would you like to barrow?
