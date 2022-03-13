@@ -11,8 +11,8 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="app.css">
+    <!-- Custom CSS
+    <link rel="stylesheet" href="app.css"> -->
 
 </head>
 <body>
@@ -54,24 +54,40 @@
             <!-- Store -->
             <div class="card col-sm-10 col-xl m-1">
                     <div class="card-header row"><h3>💻 Computer Store</h3></div>
-                    <div class="col-sm-5">
-                        <img id="image"
-                        height="200" 
-                        alt></img>
-                        <div class="col-sm-10 col-xl">
-                            <div class="card-body">
-                                <p id="price" class="card-text"></p>
+                    <div class="card-body">
+            
+                        <select class="dropdown col text-primary" name="computers" id="computers"></select>
+                            <p id="specs" class="m-2"></p>
                             </div>
                         </div>
                     </div>
+
+            
+        <div class="row">
+
+            <div class="card col-sm-10 col-xl m-1">
+                <div class="card-header row">
+                <h4 id="title" class="card-title m-1">product title </h4></div>
+                <div class="row"><img id="image" height="200" width="200" alt class="m-2 col-3"></img>
+                    <p id="info" class="card-text m-2 col-6"></p>
+                    <label id="price" class="card-text m-2 col">Price: </label></div>
+                
+                <div class="card-footer row">
+                <button id="buy" class="btn btn-primary col m-1" onClick="buyComputer()">Buy now</button>
+                    </div>
+            </div>
+
+            <div class="card col-sm-10 col-xl-3 m-1">
+                <div class="card-header row">
+                <h4 id="title" class="card-title m-1">🧾 Purchased </h4></div>
+                <div style="height: 100px;" class="card-body overflow-auto">
+                <ul id="purchased"></ul>
+                
+                
                 </div>
             </div>
 
-            <div class="card col-sm-10 col-xl m-2">
-                <h5 id="title" class="card-title m-1">product title</h5>
-                <p id="description" class="card-text">details</p>
-                <button id="buy" class="btn btn-primary m-1">Buy now</button>
-                </div>
+        </div>
 
     </div> <!-- row -->
 </div> <!-- container -->
