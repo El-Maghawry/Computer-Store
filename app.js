@@ -159,7 +159,7 @@ function paybackMoney() {
 
     }
 
-    balanceLabel.innerText = `€ ${income}`;
+    balanceLabel.innerText = `€ ${balance}`;
     incomeLabel.innerText = `€ ${income}`;
 
 }
