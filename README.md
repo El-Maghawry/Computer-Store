@@ -1,3 +1,6 @@
+Heroku Link:
+https://computer-store-web-application.herokuapp.com
+
 ![img.png](Computer_Store_screenshot.png)
 
 For this assignment a dynamic webpage using “vanilla” JavaScript had to be build abiding certain guidelines.
