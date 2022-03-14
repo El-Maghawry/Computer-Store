@@ -69,8 +69,11 @@ function WorkandEarn() {
     How many hours have you worked?
     • You earn € 100 for every hour. 
     `);
+    if (!isNaN(parseInt(hoursWorked))) {
+        console.log(typeof hoursWorked)
     income += parseInt(hoursWorked) * 100;
     incomeLabel.innerText = `€ ${income}`;
+}
 }
 
 function transferEarningsToBank() {
