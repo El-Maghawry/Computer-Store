@@ -1,6 +1,7 @@
 # Computer Store App Assignment
 
 ![img.png](Computer_Store_screenshot.png)
+[![web](https://img.shields.io/static/v1?logo=heroku&message=Online&label=Heroku&color=430098)](https://computer-store-web-application.herokuapp.com)
 
 For this assignment a dynamic webpage using “vanilla” JavaScript had to be build abiding certain guidelines.
 Any visiuals were an extra for this assignment the focus was on the functionality.
